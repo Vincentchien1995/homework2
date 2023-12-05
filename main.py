@@ -16,10 +16,11 @@ word=text.split()
 # Print a list of those words and the number of their occurrences
 word_dic={}
 for i in word:
-  if len(i)>=4 and str.isupper(i) or str.istitle(i):
-    word_dic[i] += 1
-  else:
-    word_dic[i] = 1
+    if len(i) >= 4 and str.isupper(i) or str.istitle(i):
+        if i in word_dic.keys():
+            word_dic[i] += 1
+        else:
+            word_dic[i] = 1
 print(word_dic)
 
 # Use matplotlib or plotly and generate a bar chart showing the top 10 most common words (same conditions 1a) and 1b) apply) with the number of their occurrences in descending order.
