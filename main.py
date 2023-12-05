@@ -22,5 +22,4 @@ for i in word:
     word_dic[i] = 1
 print(word_dic)
 
-
 # Use matplotlib or plotly and generate a bar chart showing the top 10 most common words (same conditions 1a) and 1b) apply) with the number of their occurrences in descending order.
