@@ -1,5 +1,5 @@
 # reads a text file containing some English text and replace special symbol
-f =open('/Users/vincentchien/Desktop/text.txt','r')
+f =open('text.txt','r')
 text = f.read()
 text = text.replace(',','').replace('.','')
 word=text.split()
