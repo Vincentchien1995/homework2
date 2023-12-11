@@ -32,5 +32,13 @@ words,counts =zip(*top_10)
 plt.bar(words, counts, color = 'orange')
 plt.show()
 
-# use wordcloud
+# wordcloud for whole text
 import wordcloud
+wc = wordcloud.WordCloud(background_color='white')
+wc.generate(text)
+wc.to_file('wordcloud_fulltext.png')
+
+# wordcloud with applying conditions 1a and 1b
+wa = wordcloud.WordCloud(background_color='white')
+wa.generate_from_frequencies(word_dic)
+wa.to_file('wordcloud_condition.png')
